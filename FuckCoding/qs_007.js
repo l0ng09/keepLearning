@@ -11,8 +11,6 @@ const a = "81111111111111111119";
 const b = "61111111111111111119";
 
 const bigIntAdd = (a, b) => {
-  console.log(a);
-  console.log(b);
   const arrA = a.split("").map((i) => parseInt(i));
   const arrB = b.split("").map((i) => parseInt(i));
   const result = [];
@@ -39,3 +37,9 @@ const bigIntAdd = (a, b) => {
 };
 
 console.log(bigIntAdd(a, b));
+
+// function bigNumberSum(a, b) {
+//   return (BigInt(a) + BigInt(b)).toString()
+// }
+
+// console.log('bigNumberSum: ', bigNumberSum(a,b));
